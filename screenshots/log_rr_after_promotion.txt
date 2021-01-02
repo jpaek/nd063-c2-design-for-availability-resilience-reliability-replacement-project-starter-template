@@ -1,0 +1,26 @@
+[ec2-user@ip-10-2-11-90 ~]$ mysql -h database-1-secondary.c2mjd5on8ecs.us-west-2.rds.amazonaws.com -P 3306 -u admin -p1MLmSIVhkPSQzrB4Vbg3 udacity
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MySQL connection id is 12
+Server version: 8.0.20 Source distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MySQL [udacity]> insert into dummy_table(id) VALUES('123532AXY1');
+Query OK, 1 row affected (0.01 sec)
+
+MySQL [udacity]> select * from dummy_table
+    -> ;
++------------+
+| id         |
++------------+
+| 123532AX   |
+| 123532AXY1 |
++------------+
+2 rows in set (0.00 sec)
+
+MySQL [udacity]> 
